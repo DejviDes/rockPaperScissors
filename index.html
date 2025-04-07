@@ -3,8 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="pickContainer">
+      <div onclick="playGame('rock')" class="rock">
+        <img width="75" src="images/rock-emoji.png" alt="">
+      </div>
+      <div onclick="playGame('paper')" class="paper">
+        <img width="75" src="images/paper-emoji.png" alt="">
+      </div>
+      <div onclick="playGame('scissors')" class="scissors">
+        <img width="75" src="images/scissors-emoji.png" alt="">
+      </div>
+    </div>
+    <p class="result"></p>
+    <p class="chosenStatus"></p>
+    <p class="score"></p>
+    <div class="buttons">
+      <button onclick="resetScore()" class="resetBtn">Reset Score</button>
+      <button onclick="autoPlay()" class="autoplayBtn">Start Autoplay</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
